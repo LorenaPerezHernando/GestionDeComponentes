@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8060942228479910563}
-  - component: {fileID: 410515077208903698}
+  - component: {fileID: 8666423076378369870}
   - component: {fileID: 4142004416632688164}
   - component: {fileID: 4707253074582501251}
   m_Layer: 0
@@ -34,7 +34,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &410515077208903698
+--- !u!114 &8666423076378369870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,11 +43,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7880580884346252150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62e38b4774ec44fa40e6f645ed10e9, type: 3}
+  m_Script: {fileID: 11500000, guid: f91bafe46af2a2b4aa7d94a384edde79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatRate: 1
-  ballPrefab: {fileID: 9131520213273411965, guid: 88ecbddca94cf484991ebcd1f4aef8d8, type: 3}
+  daysArray:
+  - lunes
+  - martes
+  - miercoles
+  - jueves
+  - viernes
+  - Sabado
+  - domingo
+  objectArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!33 &4142004416632688164
 MeshFilter:
   m_ObjectHideFlags: 0
