@@ -8,12 +8,7 @@ public class Dropper : MonoBehaviour
     public float repeatRate = 1;
     public GameObject ballPrefab;
 
-    private MyArray myArray;
 
-    private void Awake()
-    {
-        myArray = GetComponent<MyArray>();
-    }
     void Start()
     {
         InvokeRepeating(nameof(Drop), 0, repeatRate); 

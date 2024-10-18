@@ -6,15 +6,17 @@ public class DropperCorrutines : MonoBehaviour
 {
     //Attributes
     public GameObject ballPrefabs;
-    private MyArray myArray;
 
     public float minRange = 0;
     public float maxRange = 2; 
 
+    private MyArray myArray;
+    private Listas myListas;
     //Methods
     private void Awake()
     {
         myArray = GetComponent<MyArray>();
+        myListas = GetComponent<Listas>();
     }
     void Start()
     {
@@ -38,6 +40,10 @@ public class DropperCorrutines : MonoBehaviour
                 if(myArray != null)
                 {
                     myArray.AddObject(ball);
+                }
+                if(myListas != null)
+                {
+                    myListas.AddObject(ball);
                 }
             }
         }

@@ -52,7 +52,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8666423076378369870, guid: 7a3a41ef143da7d4091442ba9e3933eb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -78,3 +79,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefabs: {fileID: 9131520213273411965, guid: 88ecbddca94cf484991ebcd1f4aef8d8, type: 3}
+  minRange: 0
+  maxRange: 2
