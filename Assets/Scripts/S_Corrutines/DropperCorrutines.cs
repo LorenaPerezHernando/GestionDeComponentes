@@ -8,7 +8,9 @@ public class DropperCorrutines : MonoBehaviour
     public GameObject ballPrefabs;
 
     public float minRange = 0;
-    public float maxRange = 2; 
+    public float maxRange = 2;
+
+
 
     private MyArray myArray;
     private Listas myListas;

@@ -8,7 +8,10 @@ public class Listas : MonoBehaviour
     public int limitObjects = 7;
     public List<GameObject> objectList = new List<GameObject>(); //SIEMPRE INICIALIZAR, pq sino dan problemas
 
-    public GameObject explosionPrefab; 
+    public GameObject explosionPrefab;
+
+    public DataKPI kpiExplosionData;
+    public DataKPI knpiSpawnData;
     public void AddObject(GameObject ball)
     {
         objectList.Add(ball);
@@ -17,6 +20,12 @@ public class Listas : MonoBehaviour
             ExplosionAll();
            
         }
+
+        //Data
+        if (knpiSpawnData != null)
+            knpiSpawnData.SendData();
+
+
     }
 
     private void ExplosionAll()
@@ -29,5 +38,8 @@ public class Listas : MonoBehaviour
             //Se puede poner al final pq se actualiza al final del frame 
         }
         objectList.Clear();
+        //Data
+        if (kpiExplosionData != null)
+            kpiExplosionData.SendData();
     }
 }
